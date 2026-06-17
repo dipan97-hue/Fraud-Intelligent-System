@@ -16,7 +16,7 @@ def generate_report(transaction_text):
 """
     response = requests.post( "http://localhost:11434/api/generate",
                              json={"prompt": prompt,
-                                   "model":"llama3",
+                                   "model":"mistral",
                                    "stream": False}
     )
 

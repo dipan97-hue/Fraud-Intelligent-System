@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# Generated RAG files
+rag/fraud_docs.json
+rag/fraud_index.faiss
+rag/documents.pkl
+
+.env

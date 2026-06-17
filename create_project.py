@@ -8,11 +8,11 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s: %(m
 
 
 list_of_files = [
+    ".gitignore",
     ".github/workflows/.gitkeep",
     f'simulator/transaction_generator.py',
     f'storage/storage.py',
     'main.py',
-    f'streamlit_app/app.py',
     'models',
     f'Rules/amount_rules.py',
     f'Rules/country_rules.py',

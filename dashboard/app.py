@@ -298,7 +298,7 @@ if isinstance(transactions, list) and len(transactions) > 0:
         else:
             st.info("No ML-scored records yet.")
 
-st.markdown("GenAI-Powered Investigation", color= '#7C3AED')
+st.markdown("GenAI-Powered Investigation")
 if st.button("Gen AI Report"):
     report = generate_report(selected_alert['reasons'])
     st.markdown(
