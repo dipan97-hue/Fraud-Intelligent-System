@@ -1,0 +1,15 @@
+kafka-python
+faker
+uuid
+load_dotenv
+requests
+streamlit 
+pandas
+xgboost
+joblib
+scikit-learn
+matplotlib
+plotly
+sentence-transformers
+faiss-cpu
+torchvision
