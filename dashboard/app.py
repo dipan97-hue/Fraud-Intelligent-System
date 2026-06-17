@@ -1,6 +1,6 @@
 import os
 
-from dashboard.alert import get_alert, extract_transactions
+from alert import get_alert, extract_transactions
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -9,21 +9,6 @@ from rag.investigator import generate_report
 import warnings
 warnings.filterwarnings("ignore")
 
-if "supabase_url" in st.secrets:
-
-    SUPABASE_URL = st.secrets["supabase_url"]
-
-    SUPABASE_KEY = st.secrets["supabase_key"]
-
-else:
-
-    from dotenv import load_dotenv
-
-    load_dotenv()
-
-    SUPABASE_URL = os.getenv("supabase_url")
-
-    SUPABASE_KEY = os.getenv("supabase_key")
 # -------------------------------------------------------
 # PAGE CONFIG
 # -------------------------------------------------------
