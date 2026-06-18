@@ -27,7 +27,8 @@ list_of_files = [
     f'rag/create_documents.py',
     f'rag/build_index.py',
     f'rag/retrieve.py',
-    f'rag/investigator.py'
+    f'rag/investigator.py',
+    'Readme.md'
 
 
 ]
