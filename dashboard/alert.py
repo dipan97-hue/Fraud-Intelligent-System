@@ -3,13 +3,12 @@ from pathlib import Path
 import json
 import sys
 from urllib import response
-from wsgiref import headers
 import requests
-
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
 from config.config import supabase_url, supabase_key
 
 
-sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
+
 
 def get_alert():
     url = f'{supabase_url}/rest/v1/alerts?select=*'
