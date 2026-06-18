@@ -1,16 +1,23 @@
-import streamlit as st
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-if "supabase_url" in st.secrets:
+try:
 
-    supabase_url = st.secrets["supabase_url"]
+    import streamlit as st
 
-    supabase_key = st.secrets["supabase_key"]
+    if st.runtime.exists():
 
-else:
+        supabase_url = st.secrets["supabase_url"]
+
+        supabase_key = st.secrets["supabase_key"]
+
+    else:
+
+        raise Exception()
+
+except Exception:
 
     supabase_url = os.getenv("supabase_url")
 

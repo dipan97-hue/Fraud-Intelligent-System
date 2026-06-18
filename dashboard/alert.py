@@ -8,6 +8,7 @@ import requests
 
 from config.config import supabase_url, supabase_key
 
+
 sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
 
 def get_alert():
