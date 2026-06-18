@@ -1,6 +1,17 @@
-from dotenv import load_dotenv
+import streamlit as st
 import os
+from dotenv import load_dotenv
+
 load_dotenv()
 
-supabase_url = os.getenv("SUPABASE_URL")
-supabase_key = os.getenv("SUPABASE_KEY")
+if "supabase_url" in st.secrets:
+
+    supabase_url = st.secrets["supabase_url"]
+
+    supabase_key = st.secrets["supabase_key"]
+
+else:
+
+    supabase_url = os.getenv("supabase_url")
+
+    supabase_key = os.getenv("supabase_key")
